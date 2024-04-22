@@ -4,7 +4,6 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VideojuegoController;
 use App\Http\Controllers\PosesionController;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,8 +37,6 @@ Route::get('videojuegos/poseo', function (Request $request) {
     $videojuegos = App\Models\Videojuego::all();
     return view('videojuegos.poseo', ['videojuegos' => $videojuegos]);
     });
-
-
 
 Route::resource('videojuegos', VideojuegoController::class);
 Route::resource('posesiones', PosesionController::class);

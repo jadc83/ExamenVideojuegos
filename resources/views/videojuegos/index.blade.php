@@ -50,8 +50,8 @@
                 @endforeach
             </tbody>
         </table>
-        <a href="{{ route('videojuegos.create') }}" class="flex justify-center mt-4 mb-4">
-            <x-primary-button class="bg-green-500">Insertar un nuevo videojuego</x-primary-button>
+        <a href="{{ url('/videojuegos/poseo') }}" class="flex justify-center mt-4 mb-4">
+            <x-primary-button class="bg-green-500">Comprar nuevo juego</x-primary-button>
         </a>
     </div>
 </x-app-layout>

@@ -13,11 +13,9 @@ class PosesionController extends Controller
      */
     public function index(Request $request)
     {
-        $videojuego_id = $request->input('videojuego_id', 'Sin ID');
         $action = $request->input('action', 'Sin Acción');
-        $user_id = Auth::User()->id;
 
-        return view('posesiones.index', ['videojuego_id' => $videojuego_id, 'action' => $action , 'user_id' => $user_id]);
+        return view('posesiones.index', ['action' => $action]);
     }
     /**
      * Show the form for creating a new resource.
